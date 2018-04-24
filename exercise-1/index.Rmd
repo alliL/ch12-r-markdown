@@ -1,0 +1,20 @@
+---
+title: "Movie Review"
+author: "Allison Lee"
+date: "April 23, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+```
+
+## `r headline`
+> `r summary`
+
+```{r echo = FALSE}
+link_markdown <- paste0("[this link](", link, ")")
+```
+
+Follow `r link_markdown` to read the full review.
